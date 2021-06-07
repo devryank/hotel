@@ -85,10 +85,13 @@
                                                     class="btn btn-info btn-sm mr-1"><i
                                                    class="fas fa-check"></i></button>
                                         </form>
-                                        <a href="#"
-                                           class="btn btn-warning btn-sm mr-1"><i class="fas fa-edit"></i></a>
-                                        <a href="#"
-                                           class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                                        <form action="{{ route('dashboard.booking.destroy', $booking->id) }}"
+                                              method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit"
+                                                    class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>

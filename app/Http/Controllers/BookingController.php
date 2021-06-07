@@ -121,7 +121,9 @@ class BookingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Booking::findOrFail($id)->delete();
+
+        return redirect()->route('dashboard.booking.index')->with('success', 'Booking kamar berhasil dihapus');
     }
 
     public function paid($id)

@@ -30,7 +30,7 @@
                            class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>No Kamar</th>
+                                <th>Nama</th>
                                 <th>Mulai Booking</th>
                                 <th>Akhir Booking</th>
                                 <th>Harga</th>

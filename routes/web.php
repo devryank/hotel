@@ -32,6 +32,7 @@ Route::name('dashboard.')
         Route::get('/booking/create', [App\Http\Controllers\BookingController::class, 'create'])->name('booking.create');
         Route::post('/booking/store', [App\Http\Controllers\BookingController::class, 'store'])->name('booking.store');
         Route::put('/booking/{id}/paid', [App\Http\Controllers\BookingController::class, 'paid'])->name('booking.paid');
+        Route::delete('/booking/{id}/destroy', [App\Http\Controllers\BookingController::class, 'destroy'])->name('booking.destroy');
 
         Route::get('/service', [App\Http\Controllers\ServiceController::class, 'index'])->name('service.index');
         Route::get('/service/create', [App\Http\Controllers\ServiceController::class, 'create'])->name('service.create');
